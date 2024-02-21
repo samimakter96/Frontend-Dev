@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Registration Form</title>
+  <style>
+    body {
+      font-family: Calibri, Helvetica, sans-serif;
+      background-color: pink;
+    }
+    .container {
+      padding: 15px;
+      background-color: lightblue;
+    }
+    input[type=text], input[type=email], input[type=password], textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus{
+      background-color: orange;
+    }
+    div {
+      padding: 10px 0;
+    }
+    hr {
+      border: 1px solid white;
+      margin-bottom: 25px;
+    }
+    .registerbtn {
+      background-color: green;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.8;
+    }
+    .registerbtn:hover {
+      opacity: 1;
+    }
+    
+  </style>
+</head>
+<body>
+  <form>
+    <div class="container">
+      <center><h1>Student Registration Form</h1></center>
+      <hr>
+      <div>
+        <label>FirstName:</label>
+        <input type="text" name="firstName" placeholder="Enter Your First Name" required>
+        <label>MiddleName:</label>
+        <input type="text" name="middleName" placeholder="Enter Your Middle Name" required>
+        <label>LastName:</label>
+        <input type="text" name="lastName" placeholder="Enter Your Last Name" required>
+        <label>Course:</label>
+        <select name="" id="">
+          <option value="Course">Courses</option>
+          <option value="B.A">B.A</option>
+          <option value="B.S.C">B.S.C</option>
+          <option value="B.B.A">B.B.A</option>
+          <option value="B.C.A">B.C.A</option>
+          <option value="B.TECH">B.TECH</option>
+          <option value="C.S.E">C.S.E</option>
+          <option value="M.TECH">M.TECH</option>
+        </select>
+        <label for="">Gender</label>
+        <input type="radio" value="male" name="gender" checked> Male
+        <input type="radio" value="female" name="gender"> Female
+        <input type="radio" value="other" name="gender"> Other
+        <labe>Phone</labe>
+        <input type="text" name="country_code" placeholder="country code" value="+91">
+        <input type="tel" name="phone" placeholder="phone no." required>
+        <br><br>
+        <labe>Current Address:</labe>
+        <textarea cols="80" rows="5" placeholder="Current Address" value="address" required></textarea>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter Your Email" name="email" required>
+        <label for="psw">Password:</label>
+        <input type="password" placeholder="Enter Your Password" name="psw" required>
+        <label for="psw-repeat">Password:</label>
+        <input type="password" placeholder="Retype Password" name="psw-repeat" required>
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>

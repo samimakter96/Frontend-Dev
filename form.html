@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding form in HTML</title>
+</head>
+<body>
+    <form action="">
+        <label for="fname">FirstName:</label>
+        <input type="text" id="fname" name="first_name" value="Samim">
+        <br>
+        <label for="lname">LastName:</label>
+        <input type="text" id="lname" name=last_name" value="Akter">
+        <br>
+        <br>
+        <label for="uname">UserName:</label>
+        <input type="text" id="lname" name="username" required>
+        <br>
+        <br>
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="password" required>
+        <br>
+        <br>
+        
+        <label>Choose the language</label> <br>
+        <input type="radio" id="html" name="language">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" name="language">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="js" name="language">
+        <label for="js">JS</label><br>
+        <br><br>
+        <label for="favcolor">Choose your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <br><br>
+        <label for="joining">Joining Date:-</label>
+        <input type="date" id="joining" name="joiningDate">
+        <br><br>
+        <label for="joining1">Enter a date before 1719-12-22:-</label>
+        <input type="date" id="joining1" name="joiningDate" max="1979-12-22">
+        <br><br>
+        <label for="joining1">Enter a date after 2024:-</label>
+        <input type="date" id="joining1" name="joiningDate" max="12-29-2024">
+        <br><br>
+        <label for="datetime">Date and time:-</label>
+        <input type="datetime-local" id="datetime" name="time">
+        <br><br>
+        <label for="email">Enter your email:-</label>
+        <input type="email" id="email" name="emailId">
+        <br><br>
+        <label for="file">Upload your resume:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+        <label for="month">Resigning Month:</label>
+        <input type="month" id="month" name="month">
+        <br><br>
+        <label for="">Input any number between 1 to 25:</label>
+        <input type="number" min="1" max="25">
+        <br><br>
+        <label for="">Rate us 1 to 10:</label>
+        <input type="range" min="1" max="10">
+        <br><br>
+        <label for="gsearch">Search Google</label>
+        <input type="search" id="gsearch" name="search">
+        <br><br>
+        <label for="">Enter your phone number:</label>
+        <input type="tel" pattern="+[0-9]{2}-[0-9]-{5}-[0-9]{5}">
+        <br><br>
+        <labe>Add your Instagram profile:</labe>
+        <input type="url">
+        <br><br>
+        <label>Choose the language</label> <br>
+        <input type="checkbox" id="html" name="language">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="css" name="language">
+        <label for="css">CSS</label><br>
+
+        <input type="checkbox" id="js" name="language">
+        <label for="js">JS</label><br> <br>
+
+        <label for="">Choose the Best City:</label>
+        <select name="City" id="" size="3" multiple>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="bangalore" selected>Bangalore</option>
+        </select>
+        <br><br>
+        <label for="">Please give the details about you:</label><br>
+        <textarea name="comment" id="" cols="30" rows="10">Hi!</textarea>
+        <br><br>
+        <fieldset>
+            <legend>Graduation details</legend>
+            <br>
+            Collage Name: <input type="text"><br><br>
+            University Name: <input type="text"><br><br>
+            Graduation percentage: <input type="text"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>10th details</legend>
+            <br>
+            School Name: <input type="text"><br><br>
+            Board Name: <input type="text"><br><br>
+            10th percentage: <input type="text"><br><br>
+        </fieldset>
+        <br>
+        <br>
+        <label for="">Choose your favorite Car Brand:</label>
+        <input list="sample">
+        <datalist id="sample">
+            <option value="Audi">Audi</option>
+            <option value="Lamborgini">Lamborgini</option>
+            <option value="BMW">BMW</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Mahindra">Mahindra</option>
+            <option value="TATA">TATA</option>
+        </datalist>
+        <br><br>
+        <input type="reset">
+        <br><br>
+        <input type="submit" value="Click Me">
+    </form>
+</body>
+</html>
+

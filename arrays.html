@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JS</title>
+</head>
+<body>
+    <script>
+        // let arr = new Array();
+        // let arr = []
+
+        let languages = ["C", "Java", "Python", "JavaScript"];
+
+        languages[2] = "Flutter";
+        languages[4] = "C++";
+
+        // document.write(languages[0])
+        // document.write(languages[1])
+        // document.write(languages[2])
+        // document.write(languages[3])
+        // document.write(languages[4])
+
+        // document.write(languages.length);
+
+        // document.write(languages);
+
+        // mix values
+        let arr = ["Java", {name: "Samim"}, true, function(){document.write("Hello");}];
+        document.write(arr[1].name);
+        arr[3]();
+
+    </script>
+</body>
+</html>
