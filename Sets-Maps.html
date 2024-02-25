@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UnderStanding Sets and Maps in JS</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    // set only hold unique value
+    // let name = new Set(['Samim', 'Aman', 'Kartik', 'Anupam']);
+    // name.add('Ankit');
+    // name.add('john');
+
+    // let txt = " ";
+    // name.forEach(function(item) {
+    //   txt += item + '<br>'
+    // })
+
+    // let txt = " ";
+    // for (let i of name.values()) {
+    //   txt += i + '<br>'
+    // }
+    // document.getElementById('demo').innerHTML = txt;
+    
+    // let name = new Set();
+    // let a = 'samim';
+    // let b = 'aman';
+    // let c = 'kartik'
+    // name.add(a)
+    // name.add(b)
+    // name.add(c)
+    // document.getElementById('demo').innerHTML = name.size;
+
+
+    // map
+    
+    let name = new Map([
+      ['samim', 85],
+      ['aman', 67],
+      ['kartik', 1]
+    ]);
+    
+    name.set('john', 3)
+    name.set('anupam', 89)
+
+    // name.delete('samim')
+    // document.getElementById('demo').innerHTML = name.get('anupam');
+
+    // let text = ' ';
+    // name.forEach(function(value, key) {
+    //   text += key + ':' + value + '<br>'
+    // })
+
+    let text = ' ';
+    for (let i of name.entries()) {
+      text += i + '<br>'
+    }
+    document.getElementById('demo').innerHTML = text;
+  </script>
+</body>
+</html>
+
+
+<!-- 
+new Set()
+add()
+delete()
+has()
+forEach()
+values()
+
+size -->
+
+
+<!-- 
+new Map()
+set()
+get()
+delete()
+has()
+forEach()
+entries()
+
+
+size -->
