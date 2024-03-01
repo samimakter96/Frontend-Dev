@@ -1,0 +1,102 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://source.unsplash.com/1600x900/?nature,mountains);
+  font: Lato, Helvetica, Arial, sans-serif;
+}
+
+#navbar {
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100vh;
+  z-index: 10;
+}
+.nav-wrapper {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+.logo {
+  float: left;
+  margin-left: 28px;
+  font-size: 1.5rem;
+  height: 60px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+#navbar ul {
+  display: inline-block;
+  list-style: none;
+  margin-right: 14px;
+  text-align: right;
+  transition: transform 0.5s ease-out;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li a {
+  color: black;
+  display: block;
+  font-size: 0.7rem;
+  height: 50px;
+  margin: 0 20px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+#navbar li a:hover {
+  border-bottom: 1px solid black;
+  color: blue;
+  transition: all 1s ease;
+}
+
+#navbar li a::before, #navbar li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background-color: black;
+}
+
+#navbar li a::before {
+  left: 0;
+  transition: 0.5s;
+}
+
+#navbar li a::after {
+  background: black;
+  right: 0;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#navbar li a:hover::before {
+  background-color: black;
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+#navbar li a:hover::after {
+  background-color: transparent;
+  width: 100%;
+}
