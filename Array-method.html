@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Array Method</title>
+</head>
+<body>
+  <!-- <button onclick="tryIt()">Click here !!</button> -->
+  <button onclick="myFunction()">Click here !!</button>
+  <p id="demo"></p>
+  <script>
+    // let names = ['Anupam', 'Samim', 'Kartik', 'Aman', 'John'];
+    // let games = ['football', 'basketball', 'cricket', 'chess', 'volleyball']
+    // let days = ['sun', 'mon', 'tue', 'wed', 'thu']
+    // document.getElementById('demo').innerHTML = names.join(' / ')
+    // let y = names.pop()
+    // let y = names.push('Ankit');
+    // let x = names.shift();
+    // let y = names.shift();
+    // let z = names.unshift('Samim')
+
+    // names[1] = 'CodeBeyond'
+    // delete names[2];
+    // names.splice(0, 1)
+    // let joined = names.concat(games, days);
+    // let newArr = names.slice(2, 5)
+    // names.sort()
+    // names.reverse()
+
+    let marks = [85, 45, 87, 96, 120];
+    function myFunction() {
+      marks.sort(function(a, b) {
+        // return a - b  // ascending
+        return b - a  // descending 
+      });
+
+      document.getElementById('demo').innerHTML = marks;
+    }
+
+    // function tryIt() {
+    //   names[names.length] = 'Sakil';
+    //   document.getElementById('demo').innerHTML = names;
+    // }
+  </script>
+</body>
+</html>
