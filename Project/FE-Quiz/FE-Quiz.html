@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Development Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>"The Frontend Development Quiz"</h1>
+
+  <form id="quiz" name="quiz">
+    <p>HTML stands for Hypertext ____________ Language.</p>
+    <input id="textbox" type="text" name="question1">
+
+    <p>HTML element is the root element of an HTML document.</p>
+    <input type="radio" id="mc" name="question2" value="True">True <br>
+    <input type="radio" id="mc" name="question2" value="False">False <br>
+
+    <p>Which tag is used to describe to html images?</p>
+    <input type="radio" id="mc" name="question3" value="Img">Img <br>
+    <input type="radio" id="mc" name="question3" value="Src">Src <br>
+    <input type="radio" id="mc" name="question3" value="Href">Href <br>
+    <input type="radio" id="mc" name="question3" value="Alt">Alt <br><br>
+
+    <input type="button" id="button" value="Submit" onclick="check()">
+  </form>
+
+  <div id="after-submit"></div>
+
+  <p id="messages"></p>
+  <p id="number_correct"></p>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
