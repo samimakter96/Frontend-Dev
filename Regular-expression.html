@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Regular Expression</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script>
+    // let text = "Good Morning Students and How are you Students";
+    // let x = text.search(/students/i)  // i make a insensitive
+    // let x = text.replace(/Students/g, 'candidates')
+
+    // let text = "\nis th\nIs it?";
+    // let x = text.match(/^is/m);
+
+    // let text = 'Is this all there is my roll this number is 283482?'
+    // let x = text.match(/(this|(there))/g)
+
+    // let text = 'My roll number is 10852'
+    // let x = text.match(/\s/g);
+    // let x = text.search(/\br/g);
+
+    let text = 'Hello students yoo, hello coders !!'
+    let x = text.match(/o?/g)
+    document.getElementById('demo').innerHTML = x;
+  </script>
+</body>
+</html>
+
+
+<!-- 
+Methods
+
+replace - replace the word
+search - give me the position of the matched letter / word
+match - the words or letters itself - /g
+  
+Modifiers
+
+i - case insensitive
+g - global match
+m - multiline match 
+
+patterns
+
+[abc]
+[0-9]
+(x(y)) - alternative
+
+[] - individual output either it is a number or a letter
+() - bunch or word
+
+Meta Characters
+
+\d - digit
+\s - whitespace character
+\b - beginning of the word
+
+Quantifiers
+
+n+  - at least one n 
+n*  - zero or more occurrences of n
+n?  - zero or one occurrences of n
+-->
