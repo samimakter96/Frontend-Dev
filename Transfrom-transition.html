@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform and Transition</title>
+  <style>
+    /* 
+    div {
+      width: 300px;
+      height: 150px;
+      border: 1px solid black;
+      background-color: greenyellow;
+      transform: translate(0px, 200px);
+    }
+    
+    #sample {
+      transform: rotate(20deg); 
+      transform: rotateY(120deg);
+      transform: scaleY(2); 
+      transform: skew(20deg, 10deg);
+      transform: matrix(2, 20deg, 10deg, 2, 0, 0);
+    }
+    */
+
+    /* #sample:hover {
+      transform: rotate(90deg);
+    } */
+
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      transition: width 4s, height 4s, transform 2s;
+    }
+    
+    div:hover {
+      width: 400px;
+      height: 400px;
+      transform: rotate(180deg);
+    }
+
+  </style>
+</head>
+<body>
+  <div id="div1"></div> <br>
+</body>
+</html>
+
+<!--
+translate()
+rotate()
+scaleX()
+scaleY()
+scale()
+skewX()
+skewY()
+skew()
+matrix()
+
+3D Transform
+
+rotateX()
+rotateY()
+rotateZ()
+
+
+Transition
+
+transition
+transition-delay
+transition-duration
+transition-
+-->
