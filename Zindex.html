@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index in HTML</title>
+  <style>
+    /* img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+    }
+    body {
+      color: white;
+    } */
+
+    .showcase {
+      position: relative;
+    }
+    .red {
+      position: relative;
+      z-index: 1;
+      border: 2px solid black;
+      height: 100px;
+      margin: 30px;
+      background-color: red;
+    }
+    .blue {
+      position: absolute;
+      z-index: -1;
+      background-color: blue;
+      width: 35%;
+      height: 100px;
+      left: 270px;
+      top: 50px;
+    }
+
+    .green {
+      position: absolute;
+      z-index: 3;
+      background-color: green;
+      height: 60px;
+      width: 70%;
+      left: 50px;
+      top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- <h1>Welcome to codeBeyond</h1>
+  <img src="/Images/nature.jpg" alt="nature" width="100%" height="240">
+  <p>I hope you will enjoy these sessions as it is going to be interesting.</p> -->
+
+  <div class="showcase">
+    <div class="red">Red Container</div>
+    <div class="blue">Yellow Container</div>
+    <div class="green">Green Container</div>
+  </div>
+</body>
+</html>

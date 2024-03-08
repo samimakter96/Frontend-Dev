@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overflow</title>
+  <style>
+    /* div {
+      background-color: yellow;
+      color: green;
+      width: 300px;
+      height: 100px;
+      border: 2px solid black;
+      overflow: auto;
+      overflow-x: scroll;
+      overflow-y: visible;
+    } */
+
+    /* div p {
+      background-color: green;
+    } */
+
+    /* div > p {
+      background-color: yellow;
+    }
+
+    header > p {
+      background-color: purple;
+    } */
+
+    /* div + p {
+      background-color: yellowgreen;
+    } */
+
+    div ~ p {
+      background-color: brown;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div>
+    lorem paragraph 100 words for explaining overflow property like scroll
+  </div> -->
+  
+  <p>paragraph 0</p>
+
+  <div>
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+  </div>
+  <p>paragraph00</p>
+  <div>
+    <header>
+      <p>paragraph3</p>
+      <p>paragraph4</p>
+    </header>
+    <p>paragraph5</p>
+  </div>
+
+  <p>paragraph6</p>
+
+  <div>
+    <p>paragraph7</p>
+  </div>
+  
+
+</body>
+</html>
+
+<!-- 
+visible
+hidden
+scroll
+auto  -->
+
+
+<!-- descendent selector  (div p)
+select all p element inside div element  -->
+
+<!-- child selector (div > p)
+selects all p element that are children of div element  -->
+
+<!-- Adjacent sibling selector (div + p)
+selects the first p element that are placed immediately after div element -->
+
+<!-- general sibling selector (div ~ p) 
+selects all p elements that are next siblings of div element -->
