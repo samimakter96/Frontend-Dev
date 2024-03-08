@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap-reverse; */
+  /* flex-flow: row wrap; */
+  /* justify-content: space-evenly; */
+  /* align-items: stretch; */
+  /* flex-wrap: wrap; */
+  align-items: stretch;
+
+  background-color: green;
+  /* height: 600px; */
+}
+
+.container > div {
+  background-color: red;
+  margin: 10px;
+  width: 100px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+/* flex-direction - row, row-reverse, column, col-reverse 
+flex-wap -wrap, wrap-reverse, nowrap
+flex-flow - shorthand property to write flex-direction and flex-wrap
+justify-content - center, flex-start, flex-end, space-between, space-around, space-evenly
+align-items - center, flex-start, flex-end, baseline, stretch
+align-content - space-between, space-around, space-evenly
+
+*/
+
+/* flex-item property
+
+order
+
+flex-grow
+flex-shrink
+flex-basis
+flex - shorthand property
+*/
