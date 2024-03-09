@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Exception</title>
+</head>
+<body>
+  <input id="sample" type="text">
+  <button type="button" onclick="ready()">Let's Check</button>
+  <p id="demo"></p>
+
+  <script>
+    // try{
+
+    //   aalert('Hello')
+    // }
+    // catch(err) {
+    //   document.getElementById('demo').innerHTML = err.message;
+    // }
+    // alert('welcome to js')
+
+    function ready() {
+      const message = document.getElementById('demo');
+      message.innerHTML = " ";
+      let x = document.getElementById('sample').value;
+
+      try{
+
+        if (x == '') throw 'empty';
+        if(x < 15) throw 'number is small';
+        if(x > 25) throw 'number is larger';
+        if(isNaN(x)) throw 'not a number'
+      }
+      catch(err) {
+        message.innerHTML = 'The inserted value is '+ err;
+      }
+
+      finally {
+        document.getElementById('sample').value = '';
+      }
+    }
+  </script>
+</body>
+</html>
+
+<!-- 
+
+types of error:-
+
+EvalError
+RangeError
+ReferenceError
+SyntaxError
+TypeError
+URIError
+ -->
