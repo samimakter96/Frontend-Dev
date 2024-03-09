@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Project in HTML</title>
+    <style>
+        table, th, td {
+            border: 5px solid blue;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th {
+            color: white;
+            background-color: black;
+        }
+        td{
+            height: 50px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+        tr:hover{
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
-    <table border="2" cellpadding="10px" cellspacing="5px" style="border-collapse: collapse;">
+    <table>
         <tr>
             <th colspan="2">Name</th>
             <th>Age</th>
@@ -41,7 +62,7 @@
         </tr>
     </table>
     <hr>
-    <table border="2" cellpadding="10px" cellspacing="5px" style="border-collapse: collapse;">
+    <table>
         <tr>
             <th rowspan="2">Name</th>
             <th>First Name</th>
@@ -78,7 +99,7 @@
     </table>
     <br><br>
 
-    <table border="2" cellpadding="10px" cellspacing="5px" style="border-collapse: collapse;"> 
+    <table> 
         <tr>
             <th colspan="7">Time Table</th>
         </tr>
@@ -126,43 +147,6 @@
 
         </tr>
     </table>
-    <br>
-    <hr>
-    <h1>Employees Routine and Info</h1>
-    <table  border="2" cellpadding="10px" cellspacing="5px" style="border-collapse: collapse;">
-        <caption>day wise routine and info</caption>
-        <tr>
-            <th></th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-        </tr>
-        <tr>
-            <th>Morning</th>
-            <td colspan="2">Team meeting</td>
-            <td colspan="3">Clint meeting</td>
-            <td>Pending work</td>
-        </tr>
-        <tr>
-            <th>Afternoon</th>
-            <td>Train fresher</td>
-            <td>Train fresher</td>
-            <td>Train fresher</td>
-            <td>Train fresher</td>
-            <td rowspan="2">Client meeting with fresher</td>
-        </tr>
-        <tr>
-            <th>Evening</th>
-            <tr>HR meeting</tr>
-            <td>Yoga event</td>
-            <td>Cultural</td>
-            <td>co-curricular</td>
-        </tr>
-    </table>
 
-    
 </body>
 </html>
