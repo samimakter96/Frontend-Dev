@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Operators in details</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script>
+    // document.getElementById('demo').innerHTML = dec2bin(-5);
+
+    // function dec2bin(dec) {
+    //   return (dec >>> 0).toString(2);
+    // }
+    document.getElementById('demo').innerHTML = bin2dec(101);
+
+    function bin2dec(bin) {
+      return parseInt(bin, 2).toString(10);
+    }
+  </script>
+</body>
+</html>
+
+
+<!-- 
+Bitwise operators 
+& - And 
+| - or 
+~ - Not 
+^ - zor 
+<< - zero fill left shift 
+>> - signed right shift 
+>>> - zero fill right shift 
+
+5 & 1 - 00000001 - 1
+5 | 1 - 00000101 - 5
+5 ^ 5 - 00000100 - 4
+
+
+
+AND - Multiply
+0 & 0 - 0
+0 & 1 - 0
+1 & 0 - 0
+1 & 1 - 1
+
+OR - Sum 
+0 | 0 - 0 
+0 | 1 - 1
+1 | 0 - 1
+1 | 1 - 1
+
+
+XOR - Same Numbers - 0, Different Numbers - 1
+0 ^ 0 - 0
+0 ^ 1 - 1
+1 ^ 0 - 1
+1 ^ 1 - 0
+
+
+Zero fill left shift 
+5 - 00000101
+5 << 1
+00000101
+00001010 (10)
+
+Signed right shift 
+5 >> 1
+00000101
+00000010 (2)
+
+-5 - 11111011
+-5 >> 1
+11111011
+11111101 (-3)
+
+11111101
+00000010
+       1
+---------
+00000011
+
+ -->

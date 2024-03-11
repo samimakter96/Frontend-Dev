@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo-List</title>
+</head>
+<body>
+  <div>
+    <h1>TO DO LIST</h1>
+    <br><br>
+    <div class="row">
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="write all your tasks here" id="inputValue" style="width: 30vw;">
+          <br><br>
+          <div class="form-group">
+            <input type="button" value="Add Task" style="width: 10vw;" onclick="addItem()">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <ul id="listItems">
+        
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function addItem() {
+      let inputItem = document.getElementById('inputValue');
+      let list_items = document.getElementById('listItems');
+
+      if (inputItem.value != "") {
+        let make_li = document.createElement('li');
+        make_li.appendChild(document.createTextNode(inputItem.value));
+        list_items.appendChild(make_li)
+
+        inputItem.value = ' ';
+
+        make_li.onclick = function() {
+          this.parentNode.removeChild(this);
+        }
+      } else {
+        alert('Please add the task to the item')
+      }
+    }
+  </script>
+</body>
+</html>

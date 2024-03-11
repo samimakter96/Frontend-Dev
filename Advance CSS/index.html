@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Advance CSS</title>
+  <style>
+    #rounded1 {
+      background-color: aquamarine;
+      padding: 20px;
+      width: 200px;
+      height: 10px;
+      border-radius: 25px;
+    }
+    #rounded2 {
+      border: 2px solid black;
+      padding: 20px;
+      width: 200px;
+      height: 10px;
+      border-radius: 25px;
+    }
+    #rounded3 {
+      background: url();
+      background-repeat: no-repeat;
+      padding: 20px;  /* top right bottom left */
+      width: 200px;
+      height: 10px;
+      border-radius: 25px; /* top-left top-right bottom-right bottom-left */
+    }
+    #rounded4 {
+      background-color: aquamarine;
+      padding: 20px;
+      width: 200px;
+      height: 10px;
+      border-radius: 15px 50px 25px 2px; /* top-left top-right bottom-right bottom-left */
+    }
+    #rounded5 {
+      background-color: blue;
+      padding: 20px;
+      width: 200px;
+      height: 10px;
+      border-radius: 50px/15px;
+    }
+    #rounded6 {
+      background-color: green;
+      padding: 20px;
+      width: 200px;
+      height: 10px;
+      border-radius: 15px/50px;
+    }
+  </style>
+</head>
+<body>
+  <p id="rounded1">Rounded Corners</p>
+  <p id="rounded2">Rounded Corners</p>
+  <p id="rounded3">Rounded Corners</p>
+  <p id="rounded4">Rounded Corners</p>
+  <p id="rounded5">Rounded Corners</p>
+  <p id="rounded6">Rounded Corners</p>
+</body>
+</html>
