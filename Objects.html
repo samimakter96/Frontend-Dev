@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Objects in JS</title>
+</head>
+<body>
+  <p id="demo"></p>
+
+  <script>
+    /*
+    const name = {
+      firstName: 'Aman', 
+      lastName: 'Gupta', 
+      gender: 'male', 
+      age: 20, 
+      // get yearsOld() {
+      //   return this.age; 
+      // },
+      get fullName() {
+        return (this.firstName + " " + this.lastName).toUpperCase();
+      },
+      // set old(old) {
+      //   this.age = old;
+      // }
+      // fullName: function(){
+      //   return this.firstName + " " + this.lastName;
+      // }
+      // languages: [
+      //   {name: 'Java', version:["first", "second", "third"]},
+      //   {name: "C", version: ["3.2", "fourth"]},
+      //   {name: 'Python', version: ["5", "2.4"]}
+      // ]
+    };
+
+    name.old = 28;
+
+    // name.fullName = function(){
+    //     return this.firstName + " " + this.lastName;
+    //   }
+
+    // let x = "";
+    // for (let i in name.languages) {
+    //   x += "<h2>" + name.languages[i].name + "</h2>";
+    //   for (let j in name.languages[i].version) {
+    //     x += name.languages[i].version[j] + "<br>";
+    //   }
+    // }
+
+    // let x = "name1";
+    // let y = "name3";
+    // let z = "languages";
+
+    // name.salary = 39099;
+    // delete name.gender;
+
+    // let x = "";
+    // for (let i in name) {
+    //   x += name[i] + "<br>";
+    // }
+    // document.getElementById('demo').innerHTML = name.languages.name2;
+    // document.getElementById('demo').innerHTML = name[z][x];
+    // document.getElementById('demo').innerHTML = name.fullName();
+    // document.getElementById('demo').innerHTML = JSON.stringify(name);
+    // document.getElementById('demo').innerHTML = name.yearsOld;
+    // document.getElementById('demo').innerHTML = name.age;
+    document.getElementById('demo').innerHTML = name.fullName;
+    */ 
+
+
+    function name(first, last, age, gender) {
+      this.firstName = first;
+      this.lastName = last;
+      this.age = age;
+      this.gender = gender;
+    }
+
+    const person = new name('Samim', "Akter", 20, "male");
+
+    person.fullName = function() {
+      return this.firstName + " " + this.lastName;
+    }
+
+    document.getElementById('demo').innerHTML = person.fullName();
+  </script>
+</body>
+</html>
+
+
+<!-- Primitive values - string, number, boolean, null, undefined -->
+
+<!-- 
+Create objects :
+1. object literal 
+2. new keyword
+3. constructor 
+4. Object.create() -->
+
+<!-- objects are mutable  -->
+
+ 
+
+<!-- access object
+objectName.property 
+objectName["property"] 
+objectName[expression] -->
+
+<!-- Object.values() -->
+
+<!-- JSON.stringify()  - JavaScript object notation -->
