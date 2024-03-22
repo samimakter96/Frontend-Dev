@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sample"></p>
+    <script>
+        // let age = prompt("what is you age?");
+        // if(age < 18) {
+        //     document.write("You are not eligible to vote");
+        // }else if(age > 60) {
+        //     document.write("You are consider as higher citizen");
+        // }else {
+        //     document.write("Your are eligible to vote");
+        // }
+    let day;
+    switch(new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+        day = "Tuesday";
+            break;
+        case 3:
+        day = "Wednesday";
+            break;
+        case 4:
+        day = "Thursday";
+            break;
+        case 5:
+        day = "Friday";
+            break;
+        case 6:
+        day = "Saturday";
+            break;
+        default:
+        day = "no other days";
+    }
+document.getElementById("sample").innerHTML = "Today is" + " " + day;
+    // var d = new Date();
+    // document.write(d.getDay());
+    </script>
+</body>
+</html>
