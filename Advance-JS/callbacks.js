@@ -97,14 +97,43 @@
 // console.log(m());
 
 
-setTimeout(function() {
-  console.log('counting');
-}, 3000);
+// setTimeout(function() {
+//   console.log('counting');
+// }, 3000);
 
-function a(b) {
-  console.log('x');
-  b();
+// function a(b) {
+//   console.log('x');
+//   b();
+// }
+// a(function b() {
+//   console.log('y');
+// })
+
+// get html fine using callback
+// function myShow(sample) {
+//   document.getElementById("demo").innerHTML = sample;
+// }
+
+// function saveFile(myCallback) {
+//   let req = new XMLHttpRequest();
+//   req.open("GET", "closures.js");
+//   req.onload = function () {
+//     if (req.status == 200) {
+//       myCallback(this.responseText);
+//     } else {
+//       myCallback("Error: " + req.status);
+//     }
+//   };
+//   req.send();
+// }
+// saveFile(myShow);
+
+function attachEventListeners() {
+  let count = 0;
+  document.getElementById("click").addEventListener("click", function xyz() {
+    console.log(
+      "How many times the button was clicked " + ++count + " " + "times"
+    );
+  });
 }
-a(function b() {
-  console.log('y');
-})
+attachEventListeners();
